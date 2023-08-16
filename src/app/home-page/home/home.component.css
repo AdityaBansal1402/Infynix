@@ -4,3 +4,176 @@
         display: none;
     }
 }
+.carousel-indicators {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+  }
+  
+  .carousel-indicators li {
+    width: 30px;
+    height: 5px;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 15%;
+    transition: background-color 1.5s ease;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-indicators li.active {
+    background-color: #007bff;
+  }
+  .carousel-inner .carousel-item {
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel-inner .carousel-item:not(.active) {
+    opacity: 0 ;
+  }
+ .carousel-inner .carousel-item {
+  display: flex;
+}
+
+.carousel-inner .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.container {
+  perspective: 1000px; 
+  margin-right: 10%;
+}
+
+.card {
+  width: 16vw;
+  height: 60vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-3d {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateZ(30px); 
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  background-color: rgba(13, 22, 55, 255);
+  padding: 10px 0;
+  height: fit-content;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  opacity: 70%;
+}
+
+.image-text {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  color: rgb(255, 255, 255);
+  white-space: nowrap; 
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0); 
+  transition: font-size 0.3s ease;
+  text-shadow: 2px 2px 4px #000000;
+}
+.flex-wrapper {
+  display: flex;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #3c9ee5;
+}
+
+.circular-chart.green .circle {
+  stroke: #3c9ee5;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .image-text {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+}
