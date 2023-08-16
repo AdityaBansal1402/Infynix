@@ -114,11 +114,12 @@
 }
 .flex-wrapper {
   display: flex;
+  flex-flow: row nowrap;
 }
 
 .single-chart {
-  width: 33%;
-  justify-content: space-around ;
+  width: 30%;
+  align-items: center;
 }
 
 .circular-chart {
@@ -130,13 +131,13 @@
 
 .circle-bg {
   fill: none;
-  stroke: #eee;
-  stroke-width: 3.8;
+  stroke: #929292;
+  stroke-width: 2.0;
 }
 
 .circle {
   fill: none;
-  stroke-width: 2.8;
+  stroke-width: 2.0;
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
 }
@@ -147,20 +148,12 @@
   }
 }
 
-.circular-chart.orange .circle {
-  stroke: #3c9ee5;
-}
-
 .circular-chart.green .circle {
-  stroke: #3c9ee5;
-}
-
-.circular-chart.blue .circle {
-  stroke: #3c9ee5;
+  stroke: rgba(106,228,232,255);
 }
 
 .percentage {
-  fill: #666;
+  fill: black;
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
