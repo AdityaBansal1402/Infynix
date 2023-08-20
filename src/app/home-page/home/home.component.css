@@ -56,27 +56,26 @@
   text-align: center;
 }
 .container {
-  perspective: 1000px; 
+  perspective: 1000px;
   margin-right: 10%;
 }
 
-.card {
+.add {
   width: 16vw;
-  height: 60vh;
   background-color: rgba(255, 255, 255, 0.1);
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 
-.card-3d {
+.card-3d.add {
   background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateZ(30px); 
+  transform: translateZ(30px);
 }
 
-.card-img-top {
+.card-img-top1 {
   width: 100%;
   height: auto;
 }
@@ -158,15 +157,55 @@
   font-size: 0.5em;
   text-anchor: middle;
 }
+.nav.nav-tabs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
+.nav.nav-tabs > li {
+  flex-grow: 1;
+  text-align: center;
+  list-style-type: none;
+}
 
+.nav.nav-tabs > li > button {
+  width: calc(100% + 2px); 
+  border: none;
+  background-color: transparent;
+  font-size: 1.25vw;
+  border-bottom: 2px solid transparent; 
+  margin: 0; 
+  padding: 0; 
+  text-decoration: none;
+  color: black;
+  font-weight: 350;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
 
+.nav.nav-tabs > li > button.active {
+  position: relative;
+  border-bottom: 3px solid black; 
+}
 
+.nav.nav-tabs > li > button:not(.active) {
+  border-bottom: 3px solid grey;
+}
+.nav.nav-tabs > li > button:not(.active):hover {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.808);
+}
 
 
 
 @media screen and (max-width: 768px) {
   .image-text {
-    font-size: 16px; /* Decrease font size for smaller screens */
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1617px) {
+  .flex-wrapper {
+    display: none;
   }
 }
