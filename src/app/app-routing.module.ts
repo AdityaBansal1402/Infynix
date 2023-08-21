@@ -7,7 +7,6 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'network', component: NethomeComponent},
   {path:'security', component: MainPageComponent},
-
 ];
 
 @NgModule({
