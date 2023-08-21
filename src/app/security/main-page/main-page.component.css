@@ -1,0 +1,32 @@
+.container {
+    perspective: 1000px; 
+    margin-right: 10%;
+  }
+  
+  .card {
+    width: 16vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .card-3d {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateZ(30px); 
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  
