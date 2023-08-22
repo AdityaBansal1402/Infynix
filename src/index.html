@@ -37,10 +37,31 @@
 <script>
   $(document).ready(function () {
     $('#carouselExampleIndicators').carousel({
-      interval: 3000, // Set the interval as needed
+      interval: 3,
     });
   });
 </script>
-
+<script>
+  function switchToNextTab() {
+    const currentTab = document.querySelector('.nav-link.active');
+    const nextTab = currentTab.parentElement.nextElementSibling.querySelector('.nav-link');
+    
+    if (nextTab) {
+      currentTab.classList.remove('active');
+      nextTab.classList.add('active');
+      const targetId = nextTab.getAttribute('data-bs-target');
+      const tabContent = document.querySelector(targetId);
+      document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('show', 'active'));
+      tabContent.classList.add('show', 'active');
+    } else {
+      currentTab.classList.remove('active');
+      document.querySelector('.nav-item:first-child .nav-link').classList.add('active');
+      // document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('show', 'active'));
+      document.querySelector('.tab-pane:first-child').classList.add('show', 'active');
+    }
+  }
+  
+  setInterval(switchToNextTab, 50);
+</script>
 </body>
 </html>

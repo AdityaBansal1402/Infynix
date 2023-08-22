@@ -4,6 +4,7 @@ import { NethomeComponent } from './nethome/nethome.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { SdwannetComponent } from './sdwannet/sdwannet.component';
 import { ManagedservicesComponent } from './managedservices/managedservices.component';
+import { TransformativeComponent } from './transformative/transformative.component';
 
 
 
@@ -12,7 +13,8 @@ import { ManagedservicesComponent } from './managedservices/managedservices.comp
     NethomeComponent,
     EnterpriseComponent,
     SdwannetComponent,
-    ManagedservicesComponent
+    ManagedservicesComponent,
+    TransformativeComponent
   ],
   imports: [
     CommonModule

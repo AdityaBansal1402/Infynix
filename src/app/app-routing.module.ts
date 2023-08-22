@@ -8,6 +8,7 @@ import {CloudsecurityComponent} from './security/cloudsecurity/cloudsecurity.com
 import { EnterpriseComponent } from './network/enterprise/enterprise.component';
 import { SdwannetComponent } from './network/sdwannet/sdwannet.component';
 import { ManagedservicesComponent } from './network/managedservices/managedservices.component';
+import { TransformativeComponent } from './network/transformative/transformative.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'network', component: NethomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'enterprise', component:EnterpriseComponent},
   {path:'sdwannet', component:SdwannetComponent},
   {path:'netservice',component:ManagedservicesComponent},
-  
+  {path:'transform', component:TransformativeComponent}
+
 ];
 
 @NgModule({
