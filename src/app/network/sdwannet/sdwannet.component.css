@@ -1,0 +1,25 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    height: fit-content;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    opacity: 80%;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: rgb(255, 255, 255);
+    white-space: nowrap; 
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0); 
+    transition: font-size 0.3s ease;
+    text-shadow: 2px 2px 4px #000000;
+  }
