@@ -9,6 +9,11 @@ import { EnterpriseComponent } from './network/enterprise/enterprise.component';
 import { SdwannetComponent } from './network/sdwannet/sdwannet.component';
 import { ManagedservicesComponent } from './network/managedservices/managedservices.component';
 import { TransformativeComponent } from './network/transformative/transformative.component';
+import { CloudMainComponent } from './cloud/cloud-main/cloud-main.component';
+import { CloudHostedAppComponent } from './cloud/cloud-hosted-app/cloud-hosted-app.component';
+import { CloudSecurityComponent } from './cloud/cloud-security/cloud-security.component';
+import { CloudStorageComponent } from './cloud/cloud-storage/cloud-storage.component';
+import { CloudAzureComponent } from './cloud/cloud-azure/cloud-azure.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'network', component: NethomeComponent},
@@ -18,8 +23,12 @@ const routes: Routes = [
   {path:'enterprise', component:EnterpriseComponent},
   {path:'sdwannet', component:SdwannetComponent},
   {path:'netservice',component:ManagedservicesComponent},
-  {path:'transform', component:TransformativeComponent}
-
+  {path:'transform', component:TransformativeComponent},
+  {path:'cloud',component:CloudMainComponent},
+  {path:'cloud-hosted-app',component:CloudHostedAppComponent},
+  {path:'cloud-security', component:CloudSecurityComponent},
+  {path:'cloud-storage', component:CloudStorageComponent},
+  {path:'Azure',component: CloudAzureComponent}
 ];
 
 @NgModule({
