@@ -14,6 +14,9 @@ import { CloudHostedAppComponent } from './cloud/cloud-hosted-app/cloud-hosted-a
 import { CloudSecurityComponent } from './cloud/cloud-security/cloud-security.component';
 import { CloudStorageComponent } from './cloud/cloud-storage/cloud-storage.component';
 import { CloudAzureComponent } from './cloud/cloud-azure/cloud-azure.component';
+import { VerticalmainpageComponent } from './verticals/verticalmainpage/verticalmainpage.component';
+import { ManufacturingComponent } from './verticals/manufacturing/manufacturing.component';
+import { ItComponent } from './verticals/it/it.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'network', component: NethomeComponent},
@@ -28,7 +31,9 @@ const routes: Routes = [
   {path:'cloud-hosted-app',component:CloudHostedAppComponent},
   {path:'cloud-security', component:CloudSecurityComponent},
   {path:'cloud-storage', component:CloudStorageComponent},
-  {path:'Azure',component: CloudAzureComponent}
+  {path:'Azure',component: CloudAzureComponent},
+  {path: 'verticalmainpage', component:VerticalmainpageComponent},
+  {path: 'manufacturing', component:ManufacturingComponent},
 ];
 
 @NgModule({
