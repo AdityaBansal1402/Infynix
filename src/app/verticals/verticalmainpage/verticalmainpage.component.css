@@ -1,0 +1,54 @@
+.container {
+  perspective: 1000px;
+  margin-right: 10%;
+}
+
+.add {
+  width: 16vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-3d.add {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateZ(30px);
+}
+
+.card-img-top1 {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  height: fit-content;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  opacity: 80%;
+}
+
+.image-text {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: rgb(255, 255, 255);
+  white-space: nowrap; 
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0); 
+  transition: font-size 0.3s ease;
+  text-shadow: 2px 2px 4px #000000;
+}
