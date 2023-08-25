@@ -17,6 +17,14 @@ import { CloudAzureComponent } from './cloud/cloud-azure/cloud-azure.component';
 import { VerticalmainpageComponent } from './verticals/verticalmainpage/verticalmainpage.component';
 import { ManufacturingComponent } from './verticals/manufacturing/manufacturing.component';
 import { ItComponent } from './verticals/it/it.component';
+import { AutomobileComponent } from './verticals/automobile/automobile.component';
+import { CoworkingComponent } from './verticals/coworking/coworking.component';
+import { EcommerceComponent } from './verticals/ecommerce/ecommerce.component';
+import { EducationalComponent } from './verticals/educational/educational.component';
+import { ResidentialComponent } from './verticals/residential/residential.component';
+import { StartupsComponent } from './verticals/startups/startups.component';
+import { HospitalityComponent } from './verticals/hospitality/hospitality.component';
+import { LogisticsComponent } from './verticals/logistics/logistics.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'network', component: NethomeComponent},
@@ -34,6 +42,16 @@ const routes: Routes = [
   {path:'Azure',component: CloudAzureComponent},
   {path: 'verticalmainpage', component:VerticalmainpageComponent},
   {path: 'manufacturing', component:ManufacturingComponent},
+  {path: 'it', component:ItComponent},
+  {path: 'automobile', component: AutomobileComponent},
+  {path: 'coworking', component:CoworkingComponent},
+  {path: 'ecommerce', component:EcommerceComponent},
+  {path: 'educational', component:EducationalComponent},
+  {path: 'hospitality', component:HospitalityComponent},
+  {path: 'logistics', component:LogisticsComponent},
+  {path: 'residential', component:ResidentialComponent},
+  {path: 'startups', component:StartupsComponent},
+
 ];
 
 @NgModule({
