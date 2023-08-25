@@ -26,6 +26,8 @@ import { StartupsComponent } from './verticals/startups/startups.component';
 import { HospitalityComponent } from './verticals/hospitality/hospitality.component';
 import { LogisticsComponent } from './verticals/logistics/logistics.component';
 import { AwsComponent } from './cloud/aws/aws.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { CareersComponent } from './careers/careers/careers.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'network', component: NethomeComponent},
@@ -52,7 +54,10 @@ const routes: Routes = [
   {path: 'logistics', component:LogisticsComponent},
   {path: 'residential', component:ResidentialComponent},
   {path: 'startups', component:StartupsComponent},
-  {path:'Aws', component:AwsComponent}
+  {path:'Aws', component:AwsComponent},
+  {path:'Azure',component:CloudAzureComponent},
+  {path: 'AboutUs', component:AboutUsComponent},
+  {path: 'Careers', component:CareersComponent}
 ];
 
 @NgModule({

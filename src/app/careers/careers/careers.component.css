@@ -1,0 +1,232 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    height: fit-content;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    opacity: 80%;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: rgb(255, 255, 255);
+    white-space: nowrap; 
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0); 
+    transition: font-size 0.3s ease;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+
+  @media only screen and (max-width: 1026px) {
+    .small-n {
+        display: none;
+    }
+}
+.carousel-indicators {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+  }
+  
+  .carousel-indicators li {
+    width: 30px;
+    height: 5px;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 15%;
+    transition: background-color 1.5s ease;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-indicators li.active {
+    background-color: #007bff;
+  }
+  .carousel-inner .carousel-item {
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel-inner .carousel-item:not(.active) {
+    opacity: 0 ;
+  }
+ .carousel-inner .carousel-item {
+  display: flex;
+}
+
+.carousel-inner .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.container {
+  perspective: 1000px;
+  margin-right: 10%;
+}
+
+.add {
+  width: 16vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-3d.add {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateZ(30px);
+}
+
+.card-img-top1 {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  background-color: rgba(13, 22, 55, 255);
+  padding: 10px 0;
+  height: fit-content;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: fit-content;
+  opacity: 70%;
+}
+
+.image-text {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  color: rgb(255, 255, 255);
+  white-space: nowrap; 
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0); 
+  transition: font-size 0.3s ease;
+  text-shadow: 2px 2px 4px #000000;
+}
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 30%;
+  align-items: center;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #929292;
+  stroke-width: 2.0;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.0;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.green .circle {
+  stroke: rgba(106,228,232,255);
+}
+
+.percentage {
+  fill: black;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+.nav.nav-tabs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav.nav-tabs > li {
+  flex-grow: 1;
+  text-align: center;
+  list-style-type: none;
+}
+
+.nav.nav-tabs > li > button {
+  width: calc(100%); 
+  border: none;
+  background-color: transparent;
+  font-size: 1.25vw;
+  border-bottom: 2px solid transparent; 
+  margin: 0; 
+  padding: 0; 
+  text-decoration: none;
+  color: black;
+  font-weight: 350;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav.nav-tabs > li > button.active {
+  position: relative;
+  border-bottom: 3px solid black; 
+}
+
+.nav.nav-tabs > li > button:not(.active) {
+  border-bottom: 3px solid grey;
+}
+.nav.nav-tabs > li > button:not(.active):hover {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.808);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .image-text {
+    font-size: 16px;
+  }
+}
