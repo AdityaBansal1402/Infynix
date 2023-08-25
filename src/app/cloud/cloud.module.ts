@@ -5,6 +5,7 @@ import { CloudHostedAppComponent } from './cloud-hosted-app/cloud-hosted-app.com
 import { CloudSecurityComponent } from './cloud-security/cloud-security.component';
 import { CloudStorageComponent } from './cloud-storage/cloud-storage.component';
 import { CloudAzureComponent } from './cloud-azure/cloud-azure.component';
+import { AwsComponent } from './aws/aws.component';
 
 
 
@@ -14,7 +15,8 @@ import { CloudAzureComponent } from './cloud-azure/cloud-azure.component';
     CloudHostedAppComponent,
     CloudSecurityComponent,
     CloudStorageComponent,
-    CloudAzureComponent
+    CloudAzureComponent,
+    AwsComponent
   ],
   imports: [
     CommonModule
