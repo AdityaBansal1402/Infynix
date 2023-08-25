@@ -41,11 +41,14 @@
     });
   });
 </script>
-<script>
+<!-- <script>
   function switchToNextTab() {
     const currentTab = document.querySelector('.nav-link.active');
-    const nextTab = currentTab.parentElement.nextElementSibling.querySelector('.nav-link');
-    
+    nextTab=null
+    if(currentTab.parentElement.nextElementSibling){
+      nextTab = currentTab.parentElement.nextElementSibling.querySelector('.nav-link');
+    }
+
     if (nextTab) {
       currentTab.classList.remove('active');
       nextTab.classList.add('active');
@@ -53,17 +56,16 @@
       const tabContent = document.querySelector(targetId);
       document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('show', 'active'));
       tabContent.classList.add('show', 'active');
+    } else {
+      currentTab.classList.remove('active');
+      document.querySelector('.nav-tabs:first-child .nav-link').classList.add('active');
+      document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('show', 'active'));
+      document.querySelector('.tab-pane:first-child').classList.add('show', 'active');
     }
-    // } else {
-    //   currentTab.classList.remove('active');
-    //   document.querySelector('.nav-item:first-child .nav-link').classList.add('active');
-    //   document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('show', 'active'));
-    //   document.querySelector('.tab-pane:first-child').classList.add('show', 'active');
-    // }
   }
   
-  setInterval(switchToNextTab, 50);
-</script>
+  setInterval(switchToNextTab, 5000);
+</script> -->
 
 </body>
 </html>
