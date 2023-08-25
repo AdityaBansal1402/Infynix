@@ -1,0 +1,29 @@
+<div class="carousel-item active" style="color: black;">
+            <div style="margin-left: 35%;margin-top: 1.3%;"><img class="d-block" src="../../../assets/images/careers/carousel/1.jpg" alt="First slide" style="opacity: 100%;width: 50%;;"></div>
+            <div class="carousel-caption">
+              
+            </div>
+      </div>
+      <div class="carousel-item">
+        <div style="margin-left: 30%;margin-top: 1.5%;"><img class="d-block" src="../../../assets/images/careers/carousel/2.jpg" alt="First slide" style="opacity: 100%;width: 60%;;"></div>
+        <div class="carousel-caption">
+          
+        </div>
+  </div>
+  <div class="carousel-item">
+    <div style="margin-left: 33%;margin-top: 0.75%;"><img class="d-block" src="../../../assets/images/careers/carousel/3.jpg" alt="First slide" style="opacity: 100%;width: 60%;;"></div>
+    <div class="carousel-caption">
+      
+    </div>
+</div>
+<div class="carousel-item">
+    <div style="margin-left: 39%;margin-top: 1.5%;"><img class="d-block" src="../../../assets/images/careers/carousel/4.jpg" alt="First slide" style="opacity: 100%;width: 40%;;"></div>
+    <div class="carousel-caption">
+      
+    </div>
+</div>
+<div class="carousel-item">
+    <div style="margin-left: 37%;margin-top: 3%;"><img class="d-block" src="../../../assets/images/careers/carousel/5.jpg" alt="First slide" style="opacity: 100%;width: 45%;;"></div>
+    <div class="carousel-caption">
+      
+    </div>
