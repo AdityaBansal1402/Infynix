@@ -51,8 +51,9 @@
       tabContent.classList.add('show', 'active');
     } else {
       currentTab.classList.remove('active');
-      document.querySelector('.nav-tabs:first-child .nav-link').classList.add('active');
+      
       document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('show', 'active'));
+      document.querySelector('.nav-tabs:first-child .nav-link').classList.add('active');
       document.querySelector('.tab-content:first-child').classList.add('show', 'active');
     }
   }
