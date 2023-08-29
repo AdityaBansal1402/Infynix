@@ -113,6 +113,10 @@
   .navbar-toggler {
     border-color: rgb(250, 250, 250);
   }
+
+  .sele:hover{
+    font-weight: 700;
+  }
 @media only screen and (max-width: 1026px) {
     .small-n {
         display: none;
@@ -133,4 +137,9 @@
         height: 35px;
         left: 10px !important;
     }
+}
+@media only screen and (max-width: 768px) {
+.hid{
+    display: none !important;
+}
 }

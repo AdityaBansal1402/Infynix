@@ -199,6 +199,10 @@
 }
 
 
+.sel:hover{
+  color: white !important;
+  background-color: rgba(0, 46, 93, 255) !important;
+}
 
 @media screen and (max-width: 768px) {
   .image-text {

@@ -81,7 +81,7 @@
   </div>
 </nav>
 <router-outlet></router-outlet>
-<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" style="display: flex;
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top hid" style="display: flex;
 justify-content: flex-end; margin: auto; width: 100%; display: flex;  background-color: rgba(26,43,109,255); color: white; margin-bottom: 0 !important; width: 100%; height: fit-content; position: relative; margin-top: 0 !important;">
   <div class="col mb-3">
     <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
@@ -96,30 +96,30 @@ justify-content: flex-end; margin: auto; width: 100%; display: flex;  background
 
   <div class="col mb-3" s>
     <h4 style="position: absolute; margin-left: -1%; font-size: 1.6vw;">Explore</h4><br><br>
-    <ul class="nav flex-column" style="position: relative; list-style-type: disc; color: white;">
-      <li class="nav-item " style="margin-bottom: 0.1%;"><a href="#" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Enterprise<br>Connectivity</a></li>
-      <li class="nav-item " style="margin-bottom: 0.1%;"><a href="#" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">SDWAN</a></li>
-      <li class="nav-item "style="margin-bottom: 0.1%;"><a href="#" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Pricing</a></li>
-      <li class="nav-item "style="margin-bottom: 0.1%;"><a href="#" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Cloud Service</a></li>
-      <li class="nav-item "style="margin-bottom: 0.1%;"><a href="#" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Data Center</a></li>
-      <li class="nav-item "style="margin-bottom: 0.1%;"><a href="#" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Managed Services</a></li>
+    <ul class="nav flex-column" style="position: relative; list-style-type: disc; color: white;font-size: 1vw;">
+      <li class="nav-item sele" style="margin-bottom: 0.1%;"><a routerLink="enterprise" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Enterprise<br>Connectivity</a></li>
+      <li class="nav-item sele" style="margin-bottom: 0.1%;"><a routerLink="sdwannet" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">SDWAN</a></li>
+      <li class="nav-item sele"style="margin-bottom: 0.1%;"><a routerLink="AboutUs" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Pricing</a></li>
+      <li class="nav-item sele"style="margin-bottom: 0.1%;"><a routerLink="cloud" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Cloud Service</a></li>
+      <li class="nav-item sele"style="margin-bottom: 0.1%;"><a routerLink="AboutUs" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Data Center</a></li>
+      <li class="nav-item sele"style="margin-bottom: 0.1%;"><a routerLink="verticalmainpage" class="nav-link p-0 text-body-secondary" style="font-size: 0.8vw;">Managed Services</a></li>
       
     </ul>
   </div>
 
   <div class="col mb-3">
-    <h4 style="position: absolute; margin-left: -1%; font-size: 1.2vw;">Useful Links</h4><br><br>
-    <ul class="nav flex-column" style="position: relative; list-style-type: disc;">
-      <li class="nav-item "style="margin-bottom: 0.01%;"><a routerLink="home" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">Home</a></li>
-      <li class="nav-item "style="margin-bottom: 0.01%;"><a href="#" routerLink="AboutUs" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">About Us</a></li>
-      <li class="nav-item "style="margin-bottom: 0.01%;"><a href="#" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">Services</a></li>
-      <li class="nav-item "style="margin-bottom: 0.01%;"><a href="#" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">Segments</a></li>
-      <li class="nav-item "style="margin-bottom: 0.01%;"><a href="#" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">Contact</a></li>
+    <h4 style="position: absolute; margin-left: -1%; font-size: 1.6vw;">Useful Links</h4><br><br>
+    <ul class="nav flex-column" style="position: relative; list-style-type: disc; font-size: 1vw;">
+      <li class="nav-item sele"style="margin-bottom: 0.01%;"><a routerLink="home" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">Home</a></li>
+      <li class="nav-item sele"style="margin-bottom: 0.01%;"><a routerLink="AboutUs" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">About Us</a></li>
+      <li class="nav-item sele"style="margin-bottom: 0.01%;"><a routerLink="verticalmainpage" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">Services</a></li>
+      <li class="nav-item sele"style="margin-bottom: 0.01%;"><a routerLink="verticalmainpage" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">Segments</a></li>
+      <li class="nav-item sele"style="margin-bottom: 0.01%;"><a routerLink="contact" class="nav-link p-0 text-body-secondary"style="font-size: 0.7vw;">Contact</a></li>
     </ul>
   </div>
 
   <div class="col mb-3">
-    <h4 style="position: absolute; margin-left: -20px;">Connect</h4><br><br>
+    <h4 style="position: absolute; margin-left: -20px; font-size: 1.6vw;">Connect</h4><br><br>
     <ul class="nav flex-column">
       <li class="nav-item mb-2" style="display: flex; align-items: center;">
       <a style="transform: translate(0%,-95%);">
