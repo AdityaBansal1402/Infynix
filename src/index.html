@@ -37,24 +37,23 @@
 <script>
   function switchToNextTab() {
     const currentTab = document.querySelector('.nav-link.active');
-    nextTab=null
-    if(currentTab.parentElement.nextElementSibling){
+    let nextTab = null;
+    
+    if (currentTab.parentElement.nextElementSibling) {
       nextTab = currentTab.parentElement.nextElementSibling.querySelector('.nav-link');
+    } else {
+      nextTab = document.querySelector('.nav-tabs .nav-item:first-child .nav-link');
     }
 
     if (nextTab) {
       currentTab.classList.remove('active');
       nextTab.classList.add('active');
+      
       const targetId = nextTab.getAttribute('data-bs-target');
       const tabContent = document.querySelector(targetId);
-      document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('show', 'active'));
-      tabContent.classList.add('show', 'active');
-    } else {
-      currentTab.classList.remove('active');
       
       document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('show', 'active'));
-      document.querySelector('.nav-tabs:first-child .nav-link').classList.add('active');
-      document.querySelector('.tab-content:first-child').classList.add('show', 'active');
+      tabContent.classList.add('show', 'active');
     }
   }
   

@@ -12,7 +12,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
